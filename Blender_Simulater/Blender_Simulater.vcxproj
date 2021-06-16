@@ -183,11 +183,27 @@
     <ClInclude Include="tonemapping_pass.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="monkey_BaseColor.png" />
-    <Image Include="monkey_Emissive.png" />
-    <Image Include="monkey_Metallic.png" />
-    <Image Include="monkey_Normal.png" />
-    <Image Include="monkey_Roughness.png" />
+    <None Include="shader\DirectionalLightPass.frag" />
+    <None Include="shader\DirectionalLightPass.vert" />
+    <None Include="shader\DirectionalLightShadowPass.frag" />
+    <None Include="shader\DirectionalLightShadowPass.vert" />
+    <None Include="shader\ExposurePass.frag" />
+    <None Include="shader\ExposurePass.vert" />
+    <None Include="shader\GeometryPass.frag" />
+    <None Include="shader\GeometryPass.vert" />
+    <None Include="shader\PointLightPass.frag" />
+    <None Include="shader\PointLightPass.vert" />
+    <None Include="shader\PointLightShadowPass.frag" />
+    <None Include="shader\PointLightShadowPass.geom" />
+    <None Include="shader\PointLightShadowPass.vert" />
+    <None Include="shader\PunctualLightStencilPass.frag" />
+    <None Include="shader\PunctualLightStencilPass.vert" />
+    <None Include="shader\SpotLightPass.frag" />
+    <None Include="shader\SpotLightPass.vert" />
+    <None Include="shader\SpotLightShadowPass.frag" />
+    <None Include="shader\SpotLightShadowPass.vert" />
+    <None Include="shader\TonemappingPass.frag" />
+    <None Include="shader\TonemappingPass.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

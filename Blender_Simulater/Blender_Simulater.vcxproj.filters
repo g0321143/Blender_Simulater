@@ -19,6 +19,9 @@
     <Filter Include="ヘッダー ファイル\Scene">
       <UniqueIdentifier>{bbdde9ba-bad8-4505-af6f-3f3b4257221c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="リソース ファイル\Shader">
+      <UniqueIdentifier>{08301f63-91b8-4ca2-ac36-0f9ff5c6fcf3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="application.cpp">
@@ -136,20 +139,68 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="monkey_BaseColor.png">
-      <Filter>リソース ファイル</Filter>
-    </Image>
-    <Image Include="monkey_Emissive.png">
-      <Filter>リソース ファイル</Filter>
-    </Image>
-    <Image Include="monkey_Metallic.png">
-      <Filter>リソース ファイル</Filter>
-    </Image>
-    <Image Include="monkey_Normal.png">
-      <Filter>リソース ファイル</Filter>
-    </Image>
-    <Image Include="monkey_Roughness.png">
-      <Filter>リソース ファイル</Filter>
-    </Image>
+    <None Include="shader\DirectionalLightPass.frag">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\DirectionalLightPass.vert">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\DirectionalLightShadowPass.frag">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\DirectionalLightShadowPass.vert">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\ExposurePass.frag">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\ExposurePass.vert">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\GeometryPass.frag">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\GeometryPass.vert">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\PointLightPass.frag">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\PointLightPass.vert">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\PointLightShadowPass.frag">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\PointLightShadowPass.geom">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\PointLightShadowPass.vert">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\PunctualLightStencilPass.frag">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\PunctualLightStencilPass.vert">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\SpotLightPass.frag">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\SpotLightPass.vert">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\SpotLightShadowPass.frag">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\SpotLightShadowPass.vert">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\TonemappingPass.frag">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\TonemappingPass.vert">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
   </ItemGroup>
 </Project>
