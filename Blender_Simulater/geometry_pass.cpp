@@ -65,16 +65,13 @@ namespace game {
 
     GeometryPass::GeometryPass(const GLuint gbuffer_fbo)
         : gbuffer_fbo_(gbuffer_fbo),
-        shader_program_(CreateProgram("shader/GeometryPass.vert",
-            "shader/GeometryPass.frag")),
+        shader_program_(CreateProgram("shader/GeometryPass.vert", "shader/GeometryPass.frag")),
         model_loc_(glGetUniformLocation(shader_program_, "Model")),
         model_it_loc_(glGetUniformLocation(shader_program_, "ModelIT")),
         view_loc_(glGetUniformLocation(shader_program_, "View")),
         projection_loc_(glGetUniformLocation(shader_program_, "Projection")),
-        projection_params_loc_(
-            glGetUniformLocation(shader_program_, "ProjectionParams")),
-        emissive_intensity_loc_(
-            glGetUniformLocation(shader_program_, "emissiveIntensity")) {}
+        projection_params_loc_(glGetUniformLocation(shader_program_, "ProjectionParams")),
+        emissive_intensity_loc_(glGetUniformLocation(shader_program_, "emissiveIntensity")) {}
 
     GeometryPass::~GeometryPass() { glDeleteProgram(shader_program_); }
 

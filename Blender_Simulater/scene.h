@@ -15,6 +15,7 @@
 #include "mesh_entity.h"
 #include "point_light.h"
 #include "spot_light.h"
+#include "exr_texture.h"
 
 namespace game {
 
@@ -25,6 +26,9 @@ namespace game {
         std::unique_ptr<DirectionalLight> directional_light_;
         std::vector<PointLight> point_lights_;
         std::vector<SpotLight> spot_lights_;
+        std::unique_ptr<ExrTexture> sky_texture_;
+        GLfloat sky_intensity_;
+
 
         /**
          * @brief ‰eƒ{ƒŠƒ…[ƒ€‚ğÄŒvZ‚·‚é

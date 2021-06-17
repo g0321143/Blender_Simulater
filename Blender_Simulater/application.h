@@ -58,6 +58,13 @@ namespace game {
 		 */
 		bool InitWindow(const GLuint width, const GLuint height);
 
+
+		/**
+		 * @brief 毎フレーム呼ばれる処理
+		 *		　キー入力によって値を変更します
+		 */
+		void KeyFunc();
+
 		/**
 		 * @brief 毎フレーム呼ばれる処理
 		 * @param delta_time 前フレームとの差分時間（秒）

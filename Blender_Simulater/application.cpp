@@ -43,8 +43,7 @@ namespace game {
             glm::vec3(-1.37508f, 7.96885f, 21.19848),
             glm::vec3(glm::radians(73.2f - 90.0f), glm::radians(-4.61f),
                 -glm::radians(-0.000004f)),
-            glm::radians(30.0f),
-            static_cast<GLfloat>(width) / height, 0.1f, 150.0f);
+            glm::radians(30.0f), static_cast<GLfloat>(width) / height, 0.1f, 150.0f);
 
         // SceneRenderer�̍쐬
         scene_renderer_ = std::make_unique<SceneRenderer>(width, height);
@@ -93,9 +92,11 @@ namespace game {
             [](auto source, auto type, auto id, auto severity, auto length,
                 const auto* message, const void* userParam) {
                     auto t = type == GL_DEBUG_TYPE_ERROR ? "** GL ERROR **" : "";
-                    std::cerr << "GL CALLBACK: " << t << " type = " << type
-                        << ", severity = " << severity << ", message = " << message
-                        << std::endl;
+                    if (!((type == 33358 && severity == 37191) || (type == 33361 && severity == 33387))) {
+                        std::cerr << "GL CALLBACK: " << t << " type = " << type
+                            << ", severity = " << severity << ", message = " << message
+                            << std::endl;
+                    }
             },
             0);
 
@@ -104,8 +105,32 @@ namespace game {
         return true;
     }
 
-    void Application::Update(const double delta_time) {
-        scene_renderer_->Render(*scene_, delta_time);
+
+    void Application::KeyFunc() {
+        glm::vec3 rotation = scene_->camera_->GetRotation();
+
+        if (glfwGetKey(window_, GLFW_KEY_DOWN) != GLFW_RELEASE) {
+            rotation.x -= 0.01f;
+            scene_->camera_->SetRotation(rotation);
+        }
+        else if (glfwGetKey(window_, GLFW_KEY_UP) != GLFW_RELEASE) {
+            rotation.x += 0.01f;
+            scene_->camera_->SetRotation(rotation);
+        }
+
+        if (glfwGetKey(window_, GLFW_KEY_LEFT) != GLFW_RELEASE) {
+            rotation.y += 0.01f;
+            scene_->camera_->SetRotation(rotation);
+        }
+        else if (glfwGetKey(window_, GLFW_KEY_RIGHT) != GLFW_RELEASE) {
+            rotation.y -= 0.01f;
+            scene_->camera_->SetRotation(rotation);
+        }
     }
 
-}  // namespace game
+    void Application::Update(const double delta_time) {
+        scene_renderer_->Render(*scene_, delta_time);
+        KeyFunc();
+    }
+
+}  // namespace gam

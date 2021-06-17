@@ -130,7 +130,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Libs\OpenGL\include;D:\Libs\glm;D:\Libs\stb;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Libs\OpenGL\include;D:\Libs\glm;D:\Libs\stb;D:\Libs\tinyexr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -148,6 +148,10 @@
     <ClCompile Include="directional_light.cpp" />
     <ClCompile Include="directional_light_pass.cpp" />
     <ClCompile Include="exposure_pass.cpp" />
+    <ClCompile Include="exr_texture.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="geometry_pass.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="material.cpp" />
@@ -157,6 +161,10 @@
     <ClCompile Include="point_light_pass.cpp" />
     <ClCompile Include="scene.cpp" />
     <ClCompile Include="scene_renderer.cpp" />
+    <ClCompile Include="sky_pass.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="spot_light.cpp" />
     <ClCompile Include="spot_light_pass.cpp" />
     <ClCompile Include="texture.cpp" />
@@ -169,6 +177,10 @@
     <ClInclude Include="directional_light.h" />
     <ClInclude Include="directional_light_pass.h" />
     <ClInclude Include="exposure_pass.h" />
+    <ClInclude Include="exr_texture.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="geometry_pass.h" />
     <ClInclude Include="material.h" />
     <ClInclude Include="mesh.h" />
@@ -177,6 +189,10 @@
     <ClInclude Include="point_light_pass.h" />
     <ClInclude Include="scene.h" />
     <ClInclude Include="scene_renderer.h" />
+    <ClInclude Include="sky_pass.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="spot_light.h" />
     <ClInclude Include="spot_light_pass.h" />
     <ClInclude Include="texture.h" />
@@ -204,6 +220,8 @@
     <None Include="shader\SpotLightShadowPass.vert" />
     <None Include="shader\TonemappingPass.frag" />
     <None Include="shader\TonemappingPass.vert" />
+    <None Include="SkyPass.frag" />
+    <None Include="SkyPass.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

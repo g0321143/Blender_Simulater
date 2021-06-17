@@ -81,6 +81,12 @@
     <ClCompile Include="texture.cpp">
       <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
+    <ClCompile Include="exr_texture.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="sky_pass.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="application.h">
@@ -135,6 +141,12 @@
       <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
     <ClInclude Include="camera.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="exr_texture.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="sky_pass.h">
       <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
   </ItemGroup>
@@ -200,6 +212,12 @@
       <Filter>リソース ファイル\Shader</Filter>
     </None>
     <None Include="shader\TonemappingPass.vert">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="SkyPass.vert">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="SkyPass.frag">
       <Filter>リソース ファイル\Shader</Filter>
     </None>
   </ItemGroup>

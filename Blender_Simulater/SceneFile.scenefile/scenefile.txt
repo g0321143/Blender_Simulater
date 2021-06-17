@@ -8713,26 +8713,6 @@ vt 0.27693599462509155 0.6250669956207275
 vt 0.2642180025577545 0.5501400232315063
 vt 0.3699130117893219 0.6101959943771362
 MeshEnd
-Mesh: Plane
-v 1.0 -1.0 0.0
-v -1.0 1.0 0.0
-v -1.0 -1.0 0.0
-v 1.0 -1.0 0.0
-v 1.0 1.0 0.0
-v -1.0 1.0 0.0
-vn 0.0 0.0 1.0
-vn 0.0 0.0 1.0
-vn 0.0 0.0 1.0
-vn 0.0 0.0 1.0
-vn 0.0 0.0 1.0
-vn 0.0 0.0 1.0
-vt 1.0 0.0
-vt 0.0 1.0
-vt 0.0 0.0
-vt 1.0 0.0
-vt 1.0 1.0
-vt 0.0 1.0
-MeshEnd
 Mesh: Suzanne.001
 v 0.46875 -0.7578125 0.2421875
 v 0.5 -0.6875 0.09375
@@ -43589,25 +43569,225 @@ vt 0.27693599462509155 0.6250669956207275
 vt 0.2642180025577545 0.5501400232315063
 vt 0.3699130117893219 0.6101959943771362
 MeshEnd
-Mesh: Plane.001
-v 1.0 -1.0 0.0
-v -1.0 1.0 0.0
-v -1.0 -1.0 0.0
-v 1.0 -1.0 0.0
-v 1.0 1.0 0.0
-v -1.0 1.0 0.0
+Mesh: Cube.001
+v -1.0 -1.0 1.0
+v -1.0 1.0 -1.0
+v -1.0 -1.0 -1.0
+v -1.0 1.0 1.0
+v 1.0 1.0 -1.0
+v -1.0 1.0 -1.0
+v 1.0 1.0 1.0
+v 1.0 -1.0 -1.0
+v 1.0 1.0 -1.0
+v 1.0 -1.0 1.0
+v -1.0 -1.0 -1.0
+v 1.0 -1.0 -1.0
+v 1.0 1.0 -1.0
+v -1.0 -1.0 -1.0
+v -1.0 1.0 -1.0
+v -1.0 1.0 1.0
+v 1.0 -1.0 1.0
+v 1.0 1.0 1.0
+v -1.0 -1.0 1.0
+v -1.0 1.0 1.0
+v -1.0 1.0 -1.0
+v -1.0 1.0 1.0
+v 1.0 1.0 1.0
+v 1.0 1.0 -1.0
+v 1.0 1.0 1.0
+v 1.0 -1.0 1.0
+v 1.0 -1.0 -1.0
+v 1.0 -1.0 1.0
+v -1.0 -1.0 1.0
+v -1.0 -1.0 -1.0
+v 1.0 1.0 -1.0
+v 1.0 -1.0 -1.0
+v -1.0 -1.0 -1.0
+v -1.0 1.0 1.0
+v -1.0 -1.0 1.0
+v 1.0 -1.0 1.0
+vn -1.0 0.0 0.0
+vn -1.0 0.0 0.0
+vn -1.0 0.0 0.0
+vn 0.0 1.0 0.0
+vn 0.0 1.0 0.0
+vn 0.0 1.0 0.0
+vn 1.0 0.0 0.0
+vn 1.0 0.0 0.0
+vn 1.0 0.0 0.0
+vn 0.0 -1.0 0.0
+vn 0.0 -1.0 0.0
+vn 0.0 -1.0 0.0
+vn 0.0 0.0 -1.0
+vn 0.0 0.0 -1.0
+vn 0.0 0.0 -1.0
 vn 0.0 0.0 1.0
 vn 0.0 0.0 1.0
 vn 0.0 0.0 1.0
+vn -1.0 0.0 0.0
+vn -1.0 0.0 0.0
+vn -1.0 0.0 0.0
+vn 0.0 1.0 0.0
+vn 0.0 1.0 0.0
+vn 0.0 1.0 0.0
+vn 1.0 0.0 0.0
+vn 1.0 0.0 0.0
+vn 1.0 0.0 0.0
+vn 0.0 -1.0 0.0
+vn 0.0 -1.0 0.0
+vn 0.0 -1.0 0.0
+vn 0.0 0.0 -1.0
+vn 0.0 0.0 -1.0
+vn 0.0 0.0 -1.0
 vn 0.0 0.0 1.0
 vn 0.0 0.0 1.0
 vn 0.0 0.0 1.0
-vt 1.0 0.0
-vt 0.0 1.0
-vt 0.0 0.0
-vt 1.0 0.0
-vt 1.0 1.0
-vt 0.0 1.0
+vt 0.625 0.0
+vt 0.375 0.25
+vt 0.375 0.0
+vt 0.625 0.25
+vt 0.375 0.5
+vt 0.375 0.25
+vt 0.625 0.5
+vt 0.375 0.75
+vt 0.375 0.5
+vt 0.625 0.75
+vt 0.375 1.0
+vt 0.375 0.75
+vt 0.375 0.5
+vt 0.125 0.75
+vt 0.125 0.5
+vt 0.875 0.5
+vt 0.625 0.75
+vt 0.625 0.5
+vt 0.625 0.0
+vt 0.625 0.25
+vt 0.375 0.25
+vt 0.625 0.25
+vt 0.625 0.5
+vt 0.375 0.5
+vt 0.625 0.5
+vt 0.625 0.75
+vt 0.375 0.75
+vt 0.625 0.75
+vt 0.625 1.0
+vt 0.375 1.0
+vt 0.375 0.5
+vt 0.375 0.75
+vt 0.125 0.75
+vt 0.875 0.5
+vt 0.875 0.75
+vt 0.625 0.75
+MeshEnd
+Mesh: Cube.002
+v -1.0 -1.0 1.0
+v -1.0 1.0 -1.0
+v -1.0 -1.0 -1.0
+v -1.0 1.0 1.0
+v 1.0 1.0 -1.0
+v -1.0 1.0 -1.0
+v 1.0 1.0 1.0
+v 1.0 -1.0 -1.0
+v 1.0 1.0 -1.0
+v 1.0 -1.0 1.0
+v -1.0 -1.0 -1.0
+v 1.0 -1.0 -1.0
+v 1.0 1.0 -1.0
+v -1.0 -1.0 -1.0
+v -1.0 1.0 -1.0
+v -1.0 1.0 1.0
+v 1.0 -1.0 1.0
+v 1.0 1.0 1.0
+v -1.0 -1.0 1.0
+v -1.0 1.0 1.0
+v -1.0 1.0 -1.0
+v -1.0 1.0 1.0
+v 1.0 1.0 1.0
+v 1.0 1.0 -1.0
+v 1.0 1.0 1.0
+v 1.0 -1.0 1.0
+v 1.0 -1.0 -1.0
+v 1.0 -1.0 1.0
+v -1.0 -1.0 1.0
+v -1.0 -1.0 -1.0
+v 1.0 1.0 -1.0
+v 1.0 -1.0 -1.0
+v -1.0 -1.0 -1.0
+v -1.0 1.0 1.0
+v -1.0 -1.0 1.0
+v 1.0 -1.0 1.0
+vn -1.0 0.0 0.0
+vn -1.0 0.0 0.0
+vn -1.0 0.0 0.0
+vn 0.0 1.0 0.0
+vn 0.0 1.0 0.0
+vn 0.0 1.0 0.0
+vn 1.0 0.0 0.0
+vn 1.0 0.0 0.0
+vn 1.0 0.0 0.0
+vn 0.0 -1.0 0.0
+vn 0.0 -1.0 0.0
+vn 0.0 -1.0 0.0
+vn 0.0 0.0 -1.0
+vn 0.0 0.0 -1.0
+vn 0.0 0.0 -1.0
+vn 0.0 0.0 1.0
+vn 0.0 0.0 1.0
+vn 0.0 0.0 1.0
+vn -1.0 0.0 0.0
+vn -1.0 0.0 0.0
+vn -1.0 0.0 0.0
+vn 0.0 1.0 0.0
+vn 0.0 1.0 0.0
+vn 0.0 1.0 0.0
+vn 1.0 0.0 0.0
+vn 1.0 0.0 0.0
+vn 1.0 0.0 0.0
+vn 0.0 -1.0 0.0
+vn 0.0 -1.0 0.0
+vn 0.0 -1.0 0.0
+vn 0.0 0.0 -1.0
+vn 0.0 0.0 -1.0
+vn 0.0 0.0 -1.0
+vn 0.0 0.0 1.0
+vn 0.0 0.0 1.0
+vn 0.0 0.0 1.0
+vt 0.625 0.0
+vt 0.375 0.25
+vt 0.375 0.0
+vt 0.625 0.25
+vt 0.375 0.5
+vt 0.375 0.25
+vt 0.625 0.5
+vt 0.375 0.75
+vt 0.375 0.5
+vt 0.625 0.75
+vt 0.375 1.0
+vt 0.375 0.75
+vt 0.375 0.5
+vt 0.125 0.75
+vt 0.125 0.5
+vt 0.875 0.5
+vt 0.625 0.75
+vt 0.625 0.5
+vt 0.625 0.0
+vt 0.625 0.25
+vt 0.375 0.25
+vt 0.625 0.25
+vt 0.625 0.5
+vt 0.375 0.5
+vt 0.625 0.5
+vt 0.625 0.75
+vt 0.375 0.75
+vt 0.625 0.75
+vt 0.625 1.0
+vt 0.375 1.0
+vt 0.375 0.5
+vt 0.375 0.75
+vt 0.125 0.75
+vt 0.875 0.5
+vt 0.875 0.75
+vt 0.625 0.75
 MeshEnd
 Material: monkey01
 baseColor: Materials/monkey01/baseColor.png
@@ -43615,14 +43795,6 @@ metallic: Materials/monkey01/metallic.png
 roughness: Materials/monkey01/roughness.png
 emission: Materials/monkey01/emission.png
 normalMap: Materials/monkey01/normalMap.png
-emissionIntensity: 683.002
-MaterialEnd
-Material: floor
-baseColor: Materials/floor/baseColor.png
-metallic: Materials/floor/metallic.png
-roughness: Materials/floor/roughness.png
-emission: Materials/floor/emission.png
-normalMap: Materials/floor/normalMap.png
 emissionIntensity: 683.002
 MaterialEnd
 Material: monkey02
@@ -43657,6 +43829,14 @@ emission: Materials/monkey05/emission.png
 normalMap: Materials/monkey05/normalMap.png
 emissionIntensity: 683.002
 MaterialEnd
+Material: floor
+baseColor: Materials/floor/baseColor.png
+metallic: Materials/floor/metallic.png
+roughness: Materials/floor/roughness.png
+emission: Materials/floor/emission.png
+normalMap: Materials/floor/normalMap.png
+emissionIntensity: 683.002
+MaterialEnd
 Material: Plane
 baseColor: Materials/Plane/baseColor.png
 metallic: Materials/Plane/metallic.png
@@ -43671,13 +43851,6 @@ Material: monkey01
 Position: 0.0 0.0 0.0
 Rotation: 0.0 -0.0 -0.0 YXZ
 Scale: 1.0 1.0 1.0
-MeshEntityEnd
-MeshEntity: Plane
-Mesh: Plane
-Material: floor
-Position: 0.0 0.0 -2.3368232250213623
-Rotation: 0.0 -0.0 -0.0 YXZ
-Scale: 10.041601181030273 10.041601181030273 10.041601181030273
 MeshEntityEnd
 MeshEntity: Suzanne.001
 Mesh: Suzanne.001
@@ -43707,18 +43880,31 @@ Position: -1.1884666681289673 3.233241558074951 -1.3136065006256104
 Rotation: 0.8508111238479614 -0.5143205523490906 -1.011271595954895 YXZ
 Scale: 1.0 0.9999999403953552 1.0
 MeshEntityEnd
-MeshEntity: Plane.001
-Mesh: Plane.001
+MeshEntity: Cube
+Mesh: Cube.001
+Material: floor
+Position: 0.817874014377594 0.0 -2.5790467262268066
+Rotation: 3.1415927410125732 0.0 0.0 YXZ
+Scale: -9.474203109741211 -8.024991035461426 -0.2002648562192917
+MeshEntityEnd
+MeshEntity: Cube.001
+Mesh: Cube.002
 Material: Plane
-Position: 3.981269598007202 -2.6219959259033203 0.0
-Rotation: 0.0 -1.6580626964569092 -0.0 YXZ
-Scale: 1.0 1.0 1.0
+Position: 3.933694362640381 -1.989809513092041 -1.2390540838241577
+Rotation: 0.0 -0.0 -0.0 YXZ
+Scale: 0.06674373149871826 1.0 1.0
 MeshEntityEnd
 DirectionalLight: Light
 Position: -4.4461164474487305 0.06887930631637573 8.27376651763916
 Intensity: 683.002
 Color: 1.0 1.0 1.0
 Direction: 0.7286956310272217 0.3941357731819153 -0.560053288936615
+DirectionalLightEnd
+DirectionalLight: Sun
+Position: 6.791045665740967 0.0 10.100232124328613
+Intensity: 683.002
+Color: 1.0 1.0 1.0
+Direction: 0.0 0.0 -1.0
 DirectionalLightEnd
 PointLight: Point
 Position: -4.057778358459473 -13.052600860595703 -0.3754614591598511
@@ -43739,3 +43925,7 @@ ClipStart: 0.05000000074505806
 Angle: 0.7853981852531433
 Blend: 0.25900474190711975
 SpotLightEnd
+Sky:
+SkyImagePath: Sky/sky.exr
+skyIntensity: 683.002
+SkyEnd
