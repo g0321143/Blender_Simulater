@@ -72,6 +72,9 @@ namespace game {
 		std::unordered_map<std::string, std::shared_ptr<Mesh>> tmp_mesh_map;
 		std::unordered_map<std::string, std::shared_ptr<Material>> tmp_material_map;
 
+		// Global Diffuse IBL Texture
+		scene->global_diffuse_ibl_texture_ = std::make_unique<ExrCubemapTexture>(path + "/GlobalIBL/Diffuse");
+
 		while (std::getline(ifs, line)) {
 			auto texts = SplitString(line, ' ');
 

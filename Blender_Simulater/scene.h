@@ -11,6 +11,7 @@
 
 #include "camera.h"
 #include "directional_light.h"
+#include "exr_cubemap_texture.h"
 #include "mesh.h"
 #include "mesh_entity.h"
 #include "point_light.h"
@@ -28,6 +29,7 @@ namespace game {
         std::vector<SpotLight> spot_lights_;
         std::unique_ptr<ExrTexture> sky_texture_;
         GLfloat sky_intensity_;
+        std::unique_ptr<ExrCubemapTexture> global_diffuse_ibl_texture_;
 
 
         /**

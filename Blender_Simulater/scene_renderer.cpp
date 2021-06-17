@@ -19,6 +19,8 @@ namespace game {
 
         spot_light_pass_.Render(scene);
 
+        diffuse_ibl_pass_.Render(scene);
+
         log_average_pass_.Render();
         const auto l_average = log_average_pass_.GetLLogAverage();
 
@@ -67,6 +69,7 @@ namespace game {
         directional_light_pass_(hdr_fbo_, gbuffer0_, gbuffer1_, gbuffer2_, fullscreen_mesh_vao_, width, height),
         point_light_pass_(hdr_fbo_, gbuffer0_, gbuffer1_, gbuffer2_, sphere_vao_, width, height),
         spot_light_pass_(hdr_fbo_, gbuffer0_, gbuffer1_, gbuffer2_, sphere_vao_, width, height),
+        diffuse_ibl_pass_(hdr_fbo_, gbuffer0_, gbuffer1_, gbuffer2_, fullscreen_mesh_vao_),
         log_average_pass_(hdr_color_buffer_, fullscreen_mesh_vao_, width, height),
         exposure_pass_(hdr_color_buffer_, exposured_fbo_, fullscreen_mesh_vao_, width, height),
         tonemapping_pass_(exposured_color_buffer_, fullscreen_mesh_vao_, width, height),

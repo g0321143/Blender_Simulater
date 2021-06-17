@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{80e1e2b2-6c14-4cad-a40d-ead1c905cd2c}</ProjectGuid>
-    <RootNamespace>BlenderSimulater</RootNamespace>
+    <ProjectGuid>{14bcacf7-9e7f-49df-b414-94efb3936193}</ProjectGuid>
+    <RootNamespace>IBLDiffuse</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -130,7 +130,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Libs\OpenGL\include;D:\Libs\glm;D:\Libs\stb;D:\Libs\tinyexr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Libs\OpenGL\include;D:\Libs\glm;D:\Libs\tinyexr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -143,118 +143,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="application.cpp" />
-    <ClCompile Include="camera.cpp" />
-    <ClCompile Include="create_program.cpp" />
-    <ClCompile Include="diffuse_ibl_pass.cpp">
+    <ClCompile Include="main.cpp">
       <SubType>
       </SubType>
     </ClCompile>
-    <ClCompile Include="directional_light.cpp" />
-    <ClCompile Include="directional_light_pass.cpp" />
-    <ClCompile Include="exposure_pass.cpp" />
-    <ClCompile Include="exr_texture.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="geometry_pass.cpp" />
-    <ClCompile Include="log_average_pass.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="material.cpp" />
-    <ClCompile Include="mesh.cpp" />
-    <ClCompile Include="mesh_entity.cpp" />
-    <ClCompile Include="physically_based_camera.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="point_light.cpp" />
-    <ClCompile Include="point_light_pass.cpp" />
-    <ClCompile Include="scene.cpp" />
-    <ClCompile Include="scene_renderer.cpp" />
-    <ClCompile Include="sky_pass.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="spot_light.cpp" />
-    <ClCompile Include="spot_light_pass.cpp" />
-    <ClCompile Include="texture.cpp" />
-    <ClCompile Include="tonemapping_pass.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="application.h" />
-    <ClInclude Include="camera.h" />
-    <ClInclude Include="create_program.h" />
-    <ClInclude Include="diffuse_ibl_pass.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="directional_light.h" />
-    <ClInclude Include="directional_light_pass.h" />
-    <ClInclude Include="exposure_pass.h" />
-    <ClInclude Include="exr_cubemap_texture.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="exr_texture.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="geometry_pass.h" />
-    <ClInclude Include="log_average_pass.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="material.h" />
-    <ClInclude Include="mesh.h" />
-    <ClInclude Include="mesh_entity.h" />
-    <ClInclude Include="physically_based_camera.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="point_light.h" />
-    <ClInclude Include="point_light_pass.h" />
-    <ClInclude Include="scene.h" />
-    <ClInclude Include="scene_renderer.h" />
-    <ClInclude Include="sky_pass.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="spot_light.h" />
-    <ClInclude Include="spot_light_pass.h" />
-    <ClInclude Include="texture.h" />
-    <ClInclude Include="tonemapping_pass.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="shader\DiffuseIBLPass.frag" />
-    <None Include="shader\DiffuseIBLPass.vert" />
-    <None Include="shader\DirectionalLightPass.frag" />
-    <None Include="shader\DirectionalLightPass.vert" />
-    <None Include="shader\DirectionalLightShadowPass.frag" />
-    <None Include="shader\DirectionalLightShadowPass.vert" />
-    <None Include="shader\ExposurePass.frag" />
-    <None Include="shader\ExposurePass.vert" />
-    <None Include="shader\GeometryPass.frag" />
-    <None Include="shader\GeometryPass.vert" />
-    <None Include="shader\LogAveragePass.frag" />
-    <None Include="shader\LogAveragePass.vert" />
-    <None Include="shader\PointLightPass.frag" />
-    <None Include="shader\PointLightPass.vert" />
-    <None Include="shader\PointLightShadowPass.frag" />
-    <None Include="shader\PointLightShadowPass.geom" />
-    <None Include="shader\PointLightShadowPass.vert" />
-    <None Include="shader\PunctualLightStencilPass.frag" />
-    <None Include="shader\PunctualLightStencilPass.vert" />
-    <None Include="shader\SpotLightPass.frag" />
-    <None Include="shader\SpotLightPass.vert" />
-    <None Include="shader\SpotLightShadowPass.frag" />
-    <None Include="shader\SpotLightShadowPass.vert" />
-    <None Include="shader\TonemappingPass.frag" />
-    <None Include="shader\TonemappingPass.vert" />
-    <None Include="SkyPass.frag" />
-    <None Include="SkyPass.vert" />
+    <None Include="IBLDiffuseShader\shader.frag" />
+    <None Include="IBLDiffuseShader\shader.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

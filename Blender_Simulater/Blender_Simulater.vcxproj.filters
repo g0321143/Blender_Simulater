@@ -93,6 +93,9 @@
     <ClCompile Include="physically_based_camera.cpp">
       <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
+    <ClCompile Include="diffuse_ibl_pass.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="application.h">
@@ -159,6 +162,12 @@
       <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
     <ClInclude Include="physically_based_camera.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="exr_cubemap_texture.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="diffuse_ibl_pass.h">
       <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
   </ItemGroup>
@@ -236,6 +245,12 @@
       <Filter>リソース ファイル\Shader</Filter>
     </None>
     <None Include="shader\LogAveragePass.frag">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\DiffuseIBLPass.vert">
+      <Filter>リソース ファイル\Shader</Filter>
+    </None>
+    <None Include="shader\DiffuseIBLPass.frag">
       <Filter>リソース ファイル\Shader</Filter>
     </None>
   </ItemGroup>
