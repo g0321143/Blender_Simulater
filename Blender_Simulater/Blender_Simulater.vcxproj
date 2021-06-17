@@ -131,6 +131,7 @@
       <PreprocessorDefinitions>GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>D:\Libs\OpenGL\include;D:\Libs\glm;D:\Libs\stb;D:\Libs\tinyexr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -153,10 +154,18 @@
       </SubType>
     </ClCompile>
     <ClCompile Include="geometry_pass.cpp" />
+    <ClCompile Include="log_average_pass.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="material.cpp" />
     <ClCompile Include="mesh.cpp" />
     <ClCompile Include="mesh_entity.cpp" />
+    <ClCompile Include="physically_based_camera.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="point_light.cpp" />
     <ClCompile Include="point_light_pass.cpp" />
     <ClCompile Include="scene.cpp" />
@@ -182,9 +191,17 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="geometry_pass.h" />
+    <ClInclude Include="log_average_pass.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="material.h" />
     <ClInclude Include="mesh.h" />
     <ClInclude Include="mesh_entity.h" />
+    <ClInclude Include="physically_based_camera.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="point_light.h" />
     <ClInclude Include="point_light_pass.h" />
     <ClInclude Include="scene.h" />
@@ -207,6 +224,8 @@
     <None Include="shader\ExposurePass.vert" />
     <None Include="shader\GeometryPass.frag" />
     <None Include="shader\GeometryPass.vert" />
+    <None Include="shader\LogAveragePass.frag" />
+    <None Include="shader\LogAveragePass.vert" />
     <None Include="shader\PointLightPass.frag" />
     <None Include="shader\PointLightPass.vert" />
     <None Include="shader\PointLightShadowPass.frag" />
