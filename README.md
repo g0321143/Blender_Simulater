@@ -1,5 +1,5 @@
 # Blender_Simulater
-Blenderの空間を再現するシミュレーターです
+Blenderのシーンをそのまま再現するシミュレーターです
 
 # 開発環境
 IDE：VisualStudio2017  
